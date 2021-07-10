@@ -1,5 +1,5 @@
 // libraries
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
 
 const Form = ({ field, initialValues, onSubmitCallback, validationSchema }) => {
