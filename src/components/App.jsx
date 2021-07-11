@@ -1,8 +1,7 @@
 // libraries
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // styles
 import './App.css';
-//components
 import Login from './Login';
 import SignUp from './SignUp';
 

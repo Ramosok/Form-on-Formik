@@ -1,14 +1,18 @@
 // libraries
 import React from 'react';
-//components
 import FormControl from '../../shared/FormControl';
 
-const LoginForm = () => {
+const LoginForm = (props) => {
     return (
-        <>
-          <FormControl />
-          <button type="submit">Submit</button>
-        </>
+      <>
+        <FormControl
+          type="text"
+          name="userName"
+          placeholder="User Name"
+
+        />
+        <button type="submit">Submit</button>
+      </>
     );
 };
 

@@ -1,9 +1,10 @@
 // libraries
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // components
 import Form from 'components/shared/Form';
 import LoginForm from 'components/Login/Form';
-import { initialValues } from 'components/Login/Form/config';
+import { initialValues, LoginSchema } from 'components/Login/Form/config';
+
 
 const Login = () => {
   // const handleSubmit = async (values) => {
@@ -20,6 +21,7 @@ const Login = () => {
             <h1>Login</h1>
             <Form
               field={LoginForm}
+              validationSchema={LoginSchema}
               initialValues={initialValues}
               // onSubmitCallback={handleSubmit}
               onSubmitCallback={(values) => { console.log(values) }}

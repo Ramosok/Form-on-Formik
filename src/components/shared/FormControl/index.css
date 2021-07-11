@@ -1,8 +1,16 @@
-.formControlClass{
-    display: block;
-
+.positionClass{
+    position: relative;
 }
 
-div{
+.formControlClass{
+    position: absolute;
+    top: 48px;
+    color:red;
+}
+
+.positionField{
     margin-bottom: 20px;
+}
+label{
+    font-size: 20px;
 }

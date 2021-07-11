@@ -2,9 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #025f6c;
 }
+
 .container {
   color: #ffffff;
   max-width: 1170px;
@@ -12,3 +14,29 @@ body {
   width: 100%;
 }
 
+.page-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+}
+
+.sub-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-sub-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 10px;
+}
+
+.button {
+  background-color: rgba(233, 174, 64, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
