@@ -1,23 +1,18 @@
 // libraries
 import React from 'react';
 import { Field, ErrorMessage } from 'formik';
+//style
 import './index.css';
 
-const FormControl = (props) => {
-
-  console.log();
+const FormControl = ({ name, label, placeholder,type  }) => {
   return (
     <>
       <div className="positionClass">
-        <label htmlFor="userName">Your name</label>
-        <div className="positionField"><Field  type="userName" name="userName" placeholder="userName" id="userName"/></div>
-        <div className="formControlClass"><ErrorMessage name="userName"/></div>
+        <label htmlFor={ name }>{ label }</label>
+        <div className="positionField"><Field  type={ type } name={ name } placeholder={ placeholder } id="userName"/></div>
+        <div className="formControlClass"><ErrorMessage name={ name }/></div>
       </div>
-      <div className="positionClass">
-        <label htmlFor="email">Email</label>
-        <div className="positionField"><Field type="email" name="email" placeholder="Email" id="email"/></div>
-        <div className="formControlClass"><ErrorMessage name="email"/></div>
-      </div>
+
     </>
   );
 };
