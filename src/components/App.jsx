@@ -11,7 +11,6 @@ const App = () => {
           <div>
             <h1>Anywhere in your app!</h1>
             <Login />
-            <SignUp />
           </div>
         </div>
     );
