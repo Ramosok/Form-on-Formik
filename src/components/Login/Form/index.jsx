@@ -32,9 +32,9 @@ const LoginForm = () => {
       />
       <FormControl
         type="text"
-        name="adress"
-        label="Adress"
-        placeholder="Adress"
+        name="address"
+        label="address"
+        placeholder="Аddress"
       />
         <FormControl
           type="text"
@@ -47,12 +47,16 @@ const LoginForm = () => {
         name="country"
         label="Country"
         disabled="disabled"
-        value="USA"
       />
       <FormControl
         select="select"
-        name="State"
-        label="State"
+        name="state"
+        label="state"
+      />
+      <FormControl
+        type="checkbox"
+        name="Accept terms and conditions"
+        label="Accept terms and conditions"
       />
 
       <button type="submit">Submit</button>
